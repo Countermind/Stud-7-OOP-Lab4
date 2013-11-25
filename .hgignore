@@ -1,0 +1,15 @@
+syntax: glob
+Project/.idea/.name
+Project/.idea/Project.iml
+Project/.idea/encodings.xml
+Project/.idea/misc.xml
+Project/.idea/modules.xml
+Project/.idea/scopes/scope_settings.xml
+Project/.idea/vcs.xml
+Project/.idea/workspace.xml
+Project/account.pyc
+Project/account_rep.pyc
+Project/atm.pyc
+Project/operation_checker.pyc
+Project/operation_generator.pyc
+Project/transfer.pyc
