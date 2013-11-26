@@ -1,10 +1,9 @@
 __author__ = 'Kostya'
-from account_rep import AccountRep
 
 
 class OperationChecker:
-    def __init__(self, account, atm):
-        self._account = account
+    def __init__(self, account_rep, atm):
+        self._account_repository = account_rep
         self._atm = atm
 
     def check(self, transfer_from, money_amount):
@@ -20,7 +19,6 @@ class OperationChecker:
         if account_id == 'ATM':
             available_cash = self._atm.cash_amount
         else:
-            account_repository = AccountRep()
-            available_cash = account_repository.get_cash_amount(account_id)
+            available_cash = self._account_repository.get_cash_amount(account_id)
 
         return available_cash >= need_money
