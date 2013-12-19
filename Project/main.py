@@ -10,7 +10,7 @@ account = None
 while not account:
     login = raw_input('Enter login: ')
     password = raw_input('Enter password: ')
-    account_repository = AccountRep()
+    account_repository = AccountRep.instance()
     account = account_repository.authorize(login, password)
 
     if not account:

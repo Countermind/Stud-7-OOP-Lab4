@@ -42,7 +42,7 @@ class Transfer:
             result_message = self._operation_checker.check(self.transfer_from, self.transfer_money)
 
         if not result_message:
-            account_repository = AccountRep()
+            account_repository = AccountRep.instance()
             for acc in self.transfer_from:
                 if isinstance(acc, basestring):
                     transfer_from_account = account_repository.get_account(acc)

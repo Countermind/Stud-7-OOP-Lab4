@@ -1,8 +1,10 @@
 __author__ = 'Kostya'
+from singleton import Singleton
 from account import Account
 import copy
 
 
+@Singleton
 class AccountRep:
     __accounts = [
         Account('1010', 'key', 500),
